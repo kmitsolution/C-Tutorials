@@ -1,4 +1,4 @@
-Sure, C++ is a powerful, general-purpose programming language. It was developed as an extension of the C programming language with object-oriented programming (OOP) features, but it also supports procedural, functional, and generic programming paradigms. Here's a brief overview:
+C++ is a powerful, general-purpose programming language. It was developed as an extension of the C programming language with object-oriented programming (OOP) features, but it also supports procedural, functional, and generic programming paradigms. Here's a brief overview:
 
 ### Key Features:
 
