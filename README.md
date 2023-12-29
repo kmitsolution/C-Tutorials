@@ -1,2 +1,2 @@
-# C-Tutorials
+# C++ Tutorials
 Complete Tutorial for C++
