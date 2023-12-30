@@ -4,7 +4,7 @@ C++ is a powerful, general-purpose programming language. It was developed as an 
 
 1. **Object-Oriented:** Supports the creation of classes and objects, encapsulation, inheritance, and polymorphism.
 2. **Efficiency:** Provides low-level manipulation and direct memory access, allowing for high performance.
-3. **Platform Independence:** Compiled to machine code, making it widely portable across different systems.
+3. **Machine Independence:** It can work on different computer systems regardless of their components.
 4. **Standard Template Library (STL):** Includes a rich collection of classes and functions for data structures, algorithms, and I/O operations.
 5. **Multi-paradigm:** Supports procedural, object-oriented, functional, and generic programming.
 6. **Extensibility:** Allows the addition of new functionalities through libraries and user-defined types.
