@@ -3,14 +3,14 @@ A C++ compiler is a software tool that translates the human-readable C programmi
 
 The compilation process involves several stages:
 
-<img src="https://github.com/kmitsolution/CLanguage/blob/main/Core/images/CCompiler.jpg" width=900 height=500 />
+<img src="https://github.com/kmitsolution/C_plus_plus-Tutorials/blob/main/images/c%2B%2BCompilation.jpg" width=900 height=500 />
 
 ### Preprocessing:
-The preprocessor stage processes the C source code before actual compilation. It handles directives that start with the "#" symbol, such as #include (for including header files) and #define (for macros). The preprocessor replaces these directives with the appropriate code, preparing the source code for the next stage.
+The preprocessor stage processes the C++ source code before actual compilation. It handles directives that start with the "#" symbol, such as #include (for including header files) and #define (for macros). The preprocessor replaces these directives with the appropriate code, preparing the source code for the next stage.
 
-For example: If you include <b> #include <stdio.h> </b> then preprocessor add the code of stdio.h in to your program.
+For example: If you include <b> #include <iostream> </b> then preprocessor add the code of stdio.h in to your program.
 
-With below command in gcc compiler to execute the preprocessor step. (let's consider main.c is a source C lanaguage code) 
+With below command in g++ compiler to execute the preprocessor step. (let's consider main.c++ is a source C++ lanaguage code) 
 ```
 g++ -E main.cpp
 ```
@@ -19,16 +19,16 @@ The compiler takes the preprocessed C source code and translates it into assembl
 
 Below command is compiling the code ( it is performing 2 steps, Preporocessing and Converting the code into assembly language)
 ```
-g++ -S main.c
+g++ -S main.cpp
 ```
 It will produce a file <b> main.s </b> which includes the assembly code.
 
 ### Assembly:
 If the compiler generates assembly code, the assembler converts the assembly code into machine code, which is a low-level representation of the program instructions, understood by the computer's hardware.
 
-Below command is converting main.c file code into binary code and you can produce a binary file
+Below command is converting main.cpp file code into binary code and you can produce a binary file
 ```
-gcc main.cpp -o main.o
+g++ main.cpp -o main.o
 ```
 ### Linking:
 The linker combines the machine code generated from different source files and library files to produce an executable binary file. It resolves external references and ensures all the required functions and libraries are present.
