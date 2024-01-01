@@ -1,5 +1,5 @@
-# C Compiler
-A C compiler is a software tool that translates the human-readable C programming code into machine-readable code, which is typically in the form of machine code or assembly language. The machine-readable code is specific to the target computer's architecture and can be directly executed by the computer's processor.
+# C++ Compiler
+A C++ compiler is a software tool that translates the human-readable C programming code into machine-readable code, which is typically in the form of machine code or assembly language. The machine-readable code is specific to the target computer's architecture and can be directly executed by the computer's processor.
 
 The compilation process involves several stages:
 
