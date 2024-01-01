@@ -10,7 +10,7 @@ The preprocessor stage processes the C++ source code before actual compilation. 
 
 For example: If you include <b> #include <iostream> </b> then preprocessor add the code of stdio.h in to your program.
 
-With below command in g++ compiler to execute the preprocessor step. (let's consider main.c++ is a source C++ lanaguage code) 
+With below command in g++ compiler to execute the preprocessor step. (let's consider main.cpp is a source C++ lanaguage code) 
 ```
 g++ -E main.cpp
 ```
