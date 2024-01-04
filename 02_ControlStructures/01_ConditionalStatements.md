@@ -45,6 +45,8 @@ int main() {
 
 The `else-if` ladder allows checking multiple conditions.
 
+## Example 1
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -63,10 +65,29 @@ int main() {
     return 0;
 }
 ```
+## Example 2
+using namespace std;
+#include<iostream>
+#include<conio.h>
+```c
+ int marks;
+    cout<<"Enter the marks"<<endl;
+    cin>>marks;
+    if(marks>=80)
+      cout<<"Grade A Student";
+    else if(marks>=70 )  
+      cout<<"Grade B Student";
+    else if(marks>=60 )  
+      cout<<"Grade C Student";
+    else
+       cout<<"Kuch padee karolo ";
+```
 
 ### 4. **Nested if Statements**
 
 You can have `if` statements inside other `if` statements, creating nested conditions.
+
+## Example 1
 
 ```cpp
 #include <iostream>
@@ -84,6 +105,33 @@ int main() {
     } else {
         cout << "Number is negative." << endl;
     }
+
+    return 0;
+}
+```
+
+## Example 2
+
+```c
+using namespace std;
+#include<iostream>
+#include<conio.h>
+int main() {
+   
+   char nationality;
+   int age;
+   cout<<"Enter the Nationality(Single Char I for Indians)"<<endl;
+   nationality=getche();
+   cout<<endl<<"Enter the age of voter" <<endl;
+   cin>>age;
+   if(nationality=='I' ){
+      if(age>=18)
+        cout<<" YES, you can vote!!"<<endl;
+      else
+        cout<<" Because your age is <18 so you Cannot vote"<<endl;
+   }
+   else
+     cout<< "Because your nationality is not indian so you cannot vote"<<endl;
 
     return 0;
 }
