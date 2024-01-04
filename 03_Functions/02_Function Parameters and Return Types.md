@@ -11,9 +11,7 @@ Parameters are the values that a function accepts. They are specified within the
 using namespace std;
 
 // Function declaration with parameters
-void greet(string name) {
-    cout << "Hello, " << name << "!" << endl;
-}
+void greet(string name) ;
 
 int main() {
     string userName = "Alice";
@@ -41,9 +39,7 @@ Functions in C++ can return a value to the calling code using a specified return
 using namespace std;
 
 // Function declaration with return type
-int add(int a, int b) {
-    return a + b;
-}
+int add(int a, int b) ;
 
 int main() {
     int result = add(3, 4); // Function call
