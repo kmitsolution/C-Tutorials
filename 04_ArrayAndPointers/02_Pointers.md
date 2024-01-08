@@ -1,3 +1,5 @@
+# Pointers in C++
+
 Pointers in C++ are variables that store memory addresses. They are powerful but can be a bit tricky to handle. Here are some key points about pointers:
 
 1. **Memory Address**: Pointers store the memory address of another variable, allowing you to indirectly manipulate that variable.
