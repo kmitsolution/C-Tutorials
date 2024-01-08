@@ -54,4 +54,60 @@ Pointers in C++ are variables that store memory addresses. They are powerful but
     int **ptrToPtr = &ptr; // Pointer to a pointer
     ```
 
+## Some Examples
+
+### Exmaple 1
+```c
+#include <iostream>
+using namespace std;
+
+int main() {
+  int i=10;
+  int *ptr =&i;//Declare a pointer + Initialize
+  int a[5]={1,2,3,4,5};
+  cout<<"Address of i=" << &i<<endl;
+  cout<<"Address stored in the pointer"<<ptr<<endl;
+  i=20;
+  cout<<"Value of inside ptr="<<*ptr<<endl;
+  cout<<"Address of ptr="<<&ptr;
+  *ptr=30;
+  cout<<"Value of inside ptr="<<*ptr<<endl;
+  cout<<"Value of i="<<i<<endl;
+   }
+```
+### Example 2
+```c
+#include <iostream>
+using namespace std;
+
+int main() {
+   //Array with Pointers
+   int *ptr;
+   int a[5]={1,2,3,4,5};
+   ptr=a;
+   cout<<"First Element in pointer="<<*ptr;
+   ptr++;
+   cout<<"Sec Element in pointer="<<*ptr;
+   return 0;
+}
+```
+
+### Example 3
+```c
+#include <iostream>
+using namespace std;
+void swap(int *x,int *y){
+   int temp=*x;
+   *x=*y;
+   *y=temp;
+}
+int main() {
+   int a=2,b=3;
+   cout<<"Values before swapping A="<<a<<",B="<<b<<endl;
+   swap(&a,&b);
+   cout<<"Values after swapping A="<<a<<",B="<<b<<endl;
+   return 0;
+}
+```
+
 Remember, while pointers can be powerful, improper use can lead to memory leaks or undefined behavior. It's essential to manage them carefully, especially when dealing with memory allocation and deallocation.
