@@ -25,10 +25,11 @@ Complete Tutorial for C++
 
 ### Classes and Objects:
 1. **Introduction to Object-Oriented Programming (OOP)**
-2. **Classes and Objects (Attributes, Methods, Constructors, Destructors)**
+2. **Classes and Objects (Attributes, Methods)**
 3. **Access Modifiers (Public, Private, Protected)**
-4. **Inheritance and Polymorphism**
-5. **Abstract Classes and Interfaces**
+4. **Constructor And Destructor**
+5. **Inheritance and Polymorphism**
+6. **Abstract Classes and Interfaces**
 
 ### Memory Management:
 1. **Dynamic Memory Allocation (new, delete)**
