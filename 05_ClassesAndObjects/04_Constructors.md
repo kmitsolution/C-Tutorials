@@ -43,3 +43,57 @@ There are several types of constructors in C++:
    };
    ```
 
+   # Example
+   ```cpp
+   #include <iostream>
+using namespace std;
+class Car{
+   
+  private:
+   string brand;
+   string model;
+   int year;
+  public:
+  //Default Constructor
+    Car(): brand("Hyndai"), model("Santro"), year(2013){
+    
+    }
+   //Parameterized Constructor 
+   Car(string brand, string model,int year): brand(brand), model(model), year(year){
+
+   }
+   //Copy Constructor
+   Car(const Car& other): 
+   brand(other.brand), model(other.model), year(other.year){
+
+   }
+   void display();
+};
+void Car:: display(){
+
+      cout<<"Model="<<model<<endl;
+      cout<<"Brand="   <<brand<<endl;
+      cout<<"Year="<<year<<endl;;
+   }
+
+int main() {
+  
+   
+   //raman's car
+   Car ramancar("Huyndai","Santro",2013); // Parameterized constructor is called
+  cout<<"---Raman's Car Details---"<<endl;
+   
+   
+   ramancar.display();
+   // anil's car
+   cout<<"--Anil's Car Details----"<<endl;
+  // Car anilcar("Maruti","Wagnor",2022);
+  Car anilcar =ramancar; //Copy constructor is getting called
+  
+   anilcar.display();
+
+   return 0;
+}
+
+   ```
+
