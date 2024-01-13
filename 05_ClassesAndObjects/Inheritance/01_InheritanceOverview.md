@@ -5,17 +5,18 @@ In C++, inheritance is a fundamental concept that allows you to create a new cla
 Here's a basic example to illustrate the concept of inheritance:
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 // Base class
 class Animal {
 public:
     void eat() {
-        std::cout << "Animal is eating." << std::endl;
+        cout << "Animal is eating." << endl;
     }
 
     void sleep() {
-        std::cout << "Animal is sleeping." << std::endl;
+        cout << "Animal is sleeping." << endl;
     }
 };
 
@@ -23,7 +24,7 @@ public:
 class Dog : public Animal {
 public:
     void bark() {
-        std::cout << "Dog is barking." << std::endl;
+        cout << "Dog is barking." << endl;
     }
 };
 
