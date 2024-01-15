@@ -46,3 +46,35 @@ int main() {
 In this example, `Dog` is derived from the `Animal` class using the `public` access specifier. This means that the public members of the base class are accessible in the derived class. The `Dog` class inherits the `eat()` and `sleep()` methods from the `Animal` class and adds a new method `bark()`.
 
 When an instance of `Dog` is created, it can access both the methods inherited from the `Animal` class and its own unique method. This is the essence of inheritance in C++. It promotes code reuse and allows you to create a hierarchy of classes with a shared set of functionalities.
+
+# One More Example
+```cpp
+#include <iostream>
+using namespace std;
+class Car{ //Base Class
+  public:
+    int year;
+    string brand;
+    string model;
+    void display(){
+      cout<<"Model="<<model<<",Brand="<<brand<<"Year="<<year;
+    } 
+   
+};
+//IS-A
+class MarutiCar: public Car{
+   public:
+     MarutiCar(string brand,string model,int year){
+      this->brand=brand;
+      this->model=model;
+      this->year=year;
+     }
+};
+
+int main() {
+   MarutiCar maruti("Hyundai","i20",2024);
+   maruti.display();
+   return 0;
+}
+
+```
