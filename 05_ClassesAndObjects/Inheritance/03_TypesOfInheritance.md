@@ -132,14 +132,14 @@ public:
 };
 
 // Intermediate classes
-class Mammal : public Animal {
+class Mammal : public virutal Animal {
 public:
     void giveBirth() {
         std::cout << "Mammal is giving birth." << std::endl;
     }
 };
 
-class Reptile : public Animal {
+class Reptile : public virtual Animal {
 public:
     void layEggs() {
         std::cout << "Reptile is laying eggs." << std::endl;
