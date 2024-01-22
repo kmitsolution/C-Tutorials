@@ -1,4 +1,4 @@
-# const Member function
+# const Member function in C++
 
 A `const` member function in C++ is a member function of a class that is declared with the `const` keyword. The purpose of declaring a member function as `const` is to indicate that this function does not modify the state of the object on which it is called. This is a key aspect of const-correctness in C++, allowing you to use member functions on `const` objects.
 
