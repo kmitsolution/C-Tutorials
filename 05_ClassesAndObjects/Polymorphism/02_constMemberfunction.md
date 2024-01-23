@@ -5,6 +5,7 @@ A `const` member function in C++ is a member function of a class that is declare
 Here's a simple example to illustrate the concept of a `const` member function:
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 class MyClass {
@@ -33,18 +34,18 @@ int main() {
 
     // Call const member function on a non-const object
     int retrievedValue = obj.getValue();
-    std::cout << "Retrieved Value: " << retrievedValue << std::endl;
+    cout << "Retrieved Value: " << retrievedValue << std::endl;
 
     // Call non-const member function on a non-const object
     obj.setValue(99);
-    std::cout << "Updated Value: " << obj.getValue() << std::endl;
+    cout << "Updated Value: " << obj.getValue() << std::endl;
 
     // Create a const object of MyClass
     const MyClass constObj(23);
 
     // Call const member function on a const object
     int constValue = constObj.getValue();
-    std::cout << "Const Object Value: " << constValue << std::endl;
+    cout << "Const Object Value: " << constValue << std::endl;
 
     // Attempt to call non-const member function on a const object (error)
     // constObj.setValue(77);  // Error! setValue is non-const
@@ -65,6 +66,7 @@ In this example:
 - Let's consider a more advanced example involving a class representing a geometric point. We'll create a `Point` class with x and y coordinates and demonstrate the use of `const` member functions to access and manipulate the state of the object.
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 class Point {
@@ -117,8 +119,8 @@ int main() {
     std::cout << "Original Point: ";
     point.display();
 
-    std::cout << "X Coordinate: " << xValue << std::endl;
-    std::cout << "Y Coordinate: " << yValue << std::endl;
+    cout << "X Coordinate: " << xValue << std::endl;
+    cout << "Y Coordinate: " << yValue << std::endl;
 
     // Attempt to modify the point using const member functions (error)
     // point.setX(5.0);  // Error! setX is non-const
@@ -127,7 +129,7 @@ int main() {
     // Move the point using a non-const member function
     point.move(2.0, -1.0);
 
-    std::cout << "Point after move: ";
+    cout << "Point after move: ";
     point.display();
 
     return 0;
@@ -150,6 +152,7 @@ In the `main` function, you can see how const member functions are used to acces
 When you have a `const` object of a class, you can only call member functions that are themselves marked as `const`. This is because calling a non-const member function on a `const` object could potentially modify its internal state, violating the const-correctness principle. Here's an example demonstrating the use of `const` member functions with a `const` object:
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 class MyClass {
@@ -167,7 +170,7 @@ public:
 
     // Display function (const member function)
     void display() const {
-        std::cout << "Value: " << value << std::endl;
+        cout << "Value: " << value << std::endl;
     }
 
     // Non-const member function
@@ -182,7 +185,7 @@ int main() {
 
     // Call const member functions on a const object
     int retrievedValue = constObj.getValue();
-    std::cout << "Retrieved Value: " << retrievedValue << std::endl;
+    cout << "Retrieved Value: " << retrievedValue << std::endl;
 
     constObj.display();
 
