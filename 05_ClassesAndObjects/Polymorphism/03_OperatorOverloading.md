@@ -1,6 +1,7 @@
 Operator overloading in C++ allows you to define how operators behave when applied to user-defined types. This enables you to provide a natural and intuitive syntax for operations involving objects of your class. Here's an example of operator overloading:
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 class Complex {
@@ -43,7 +44,7 @@ public:
     }
 
     // Overloading the '<<' operator for output
-    friend std::ostream& operator<<(std::ostream& os, const Complex& c) {
+    friend ostream& operator<<(ostream& os, const Complex& c) {
         os << c.real << " + " << c.imag << "i";
         return os;
     }
@@ -62,12 +63,12 @@ int main() {
     bool isEqual = (a == b);
 
     // Using overloaded '<<' operator for output
-    std::cout << "a: " << a << std::endl;
-    std::cout << "b: " << b << std::endl;
-    std::cout << "a + b: " << sum << std::endl;
-    std::cout << "a - b: " << difference << std::endl;
-    std::cout << "a * b: " << product << std::endl;
-    std::cout << "a == b: " << std::boolalpha << isEqual << std::endl;
+    cout << "a: " << a << endl;
+    cout << "b: " << b << endl;
+    cout << "a + b: " << sum << endl;
+    cout << "a - b: " << difference << endl;
+    cout << "a * b: " << product << endl;
+    cout << "a == b: " << boolalpha << isEqual << endl;
 
     return 0;
 }
