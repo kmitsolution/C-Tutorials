@@ -68,7 +68,7 @@ int main() {
     cout << "a + b: " << sum << endl;
     cout << "a - b: " << difference << endl;
     cout << "a * b: " << product << endl;
-    cout << "a == b: " << boolalpha << isEqual << endl;
+    cout << "a == b: " <<  isEqual << endl;
 
     return 0;
 }
