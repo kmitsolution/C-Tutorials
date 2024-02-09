@@ -5,6 +5,7 @@ In C++, an abstract class is a class that cannot be instantiated directly. It se
 Here's an example of an abstract class in C++:
 
 ```cpp
+using namespace std;
 #include <iostream>
 
 // Abstract class
@@ -15,7 +16,7 @@ public:
     
     // Non-virtual function
     void printName() const {
-        std::cout << "This is a shape." << std::endl;
+       cout << "This is a shape." <<endl;
     }
 };
 
@@ -24,7 +25,7 @@ class Circle : public Shape {
 public:
     // Override the pure virtual function
     void draw() const override {
-        std::cout << "Drawing a circle." << std::endl;
+       cout << "Drawing a circle." <<endl;
     }
 };
 
@@ -33,7 +34,7 @@ class Rectangle : public Shape {
 public:
     // Override the pure virtual function
     void draw() const override {
-        std::cout << "Drawing a rectangle." << std::endl;
+       cout << "Drawing a rectangle." <<endl;
     }
 };
 
