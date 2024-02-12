@@ -3,27 +3,30 @@ In C++, a virtual destructor is a destructor declared as virtual in a base class
 Here's a simple example to illustrate the concept:
 
 ```cpp
-#include <iostream>
-
-class Base {
-public:
-    // Virtual destructor
-    virtual ~Base() {
-        std::cout << "Base destructor called" << std::endl;
+using namespace std;
+#include<iostream>
+class Base{
+  public:
+   Base(){
+    cout<<"Base Class constructor"<<endl;
+   }
+   virtual ~Base(){
+    cout<<"Base Class destructor"<<endl;
+   }
+};
+class Child:public Base{
+  public:
+    Child(){
+      cout<<"This is child class Constructor"<<endl;
+    }
+    ~Child(){
+      cout<<"Child class destructor"<<endl;
     }
 };
-
-class Derived : public Base {
-public:
-    ~Derived() {
-        std::cout << "Derived destructor called" << std::endl;
-    }
-};
-
-int main() {
-    Base* ptr = new Derived();
-    delete ptr;
-    return 0;
+int main(){
+  Base *ptr = new Child();
+  delete ptr;
+  return 0;
 }
 ```
 
