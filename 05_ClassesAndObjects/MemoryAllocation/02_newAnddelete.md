@@ -1,3 +1,5 @@
+# new and delete Operators in C++
+
 In C++, `new` and `delete` are operators used for dynamic memory allocation and deallocation, respectively.
 
 1. **`new` Operator**:
