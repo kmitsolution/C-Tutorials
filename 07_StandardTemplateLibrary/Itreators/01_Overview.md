@@ -1,3 +1,4 @@
+# Iterators in C++
 In C++, an iterator is an object that provides a way to access elements in a container sequentially. Iterators serve as a generalized interface that allows algorithms to work with various types of containers without knowing their specific implementations.
 
 Iterators are often used in conjunction with the Standard Template Library (STL) containers and algorithms. For example, you can use iterators to iterate through elements of a vector or a list, and you can pass iterators to algorithms like `std::sort()` or `std::find()` to perform operations on container elements.
