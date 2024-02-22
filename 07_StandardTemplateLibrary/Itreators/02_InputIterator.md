@@ -1,3 +1,5 @@
+# Input Iterator
+
 In C++, an input iterator is a concept used in the Standard Template Library (STL) to define a type of iterator that allows reading elements from a sequence in a forward-only manner. Input iterators provide the ability to iterate over a range of elements, typically a container, and retrieve values from it, but they do not necessarily support all operations that other iterator types do, such as random access.
 
 Here are some key characteristics and requirements of input iterators:
