@@ -1,3 +1,5 @@
+# OutputIterator in C++
+
 In C++, an output iterator is a concept used in the Standard Template Library (STL) to define a type of iterator that allows writing elements to a sequence in a forward-only manner. Output iterators provide the ability to insert or overwrite elements in a sequence, but they do not necessarily support all operations that other iterator types do, such as random access.
 
 Here are some key characteristics and requirements of output iterators:
